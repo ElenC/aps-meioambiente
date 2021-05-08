@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300;400&display=swap');
+
+:root{
+    --primary1: #90EE90;  
+    --primary2: #000000;
+    --primary3: #ffffff;
+
+    --second1: #3CB371;
+    --second2: #F5F5F5;
+    --second3: #033f03;
+    --second4: #df0000;
+    --second5: #5e5e5e;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/*HOME*/
+
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15vh;
+}
+
+.header img{
+    width: 170px;
+    height: 100px;
+    margin: 10px;
+}
+
+.nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 8vh;
+}
+
+ul{
+    margin: 10px;
+}
+
+ul li{
+    list-style-type: none;
+}
+ul a{
+    position: relative;
+    text-decoration: none;
+    margin: 10px;
+    padding: 5px;
+    font-family: Heebo;
+    color: var(--primary2);
+}
+
+ul a::after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 1px;
+    background-color:var(--second4);
+    left: 0;
+    bottom: 0;
+}
+
+ul a:hover::after{
+    width: 100%;
+    transition: width 0,3s ease-in-out;
+}
+
+.conteudo-principal{
+    display: flex;
+    flex-direction: row;
+}
+
+.card-1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 35vw;
+    height: 77vh;
+}
+
+.card-1 p{
+    text-align: center;
+    margin: 10px;
+    color: var(--primary2);
+    font-size: 1.1rem;
+}
+
+.card-2{
+    display: grid;
+    grid-template: 1fr 1fr / 1fr 1fr;
+    width: 65vw;
+    height: 77vh;
+    background-color: var(--second3);
+}
+
+.card-2 img{
+    border-radius: 10%;
+}
+
+/*PARQUES*/
+
+.conteudo-park{
+    display: flex;
+    flex-direction: row;
+}
+
+.cont-1{
+    width: 25vw;
+    height: 332vh;
+    background-color: var(--second4);
+}
+
+.cont-2{
+    width: 75vw;
+    height: 79vh;  
+}
+
+.park-1 {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    padding: 10px;
+}
+
+h2{
+    font-family: 'Poppins';
+    font-size: 2em;
+   
+}
+
+ h2::after{
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color:var(--second4);
+}
+
+.localizacao{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 10px;
+}
+
+.localizacao p{
+    margin-top: 15px;
+    color: rgb(82, 81, 81);
+    font-weight: bold;
+}
+
+img{
+    margin: 12px;
+}
+
+p{
+    color: var(--second5);
+    margin: 5px;
+    font-family: 'Lato';
+    font-size: 1em;
+}
+
+.park-2{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    padding: 10px;
+}
+
+.park-3{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    padding: 10px;
+}
+
+/*Serra do Japi*/
+
+.conteudo-serra{
+    display: flex;
+    flex-direction: row;
+}
+
+.part-1{
+    width: 25vw;
+    height: 88vh;
+    background-color: var(--second4);
+}
+
+.img{
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.part-2{
+    width: 75vw;
+    height: 74vh;
+}
+
+.title{
+    font-family: 'Poppins';
+    font-size: 2rem;
+    text-align: center;
+}
+
+.part-2 p{
+    margin: 20px;
+    text-align: center;
+}
+
+.part-2 a{
+    list-style-type: none;
+    text-decoration: none;
+    color: var(--second5);
+}
+
+.part-2 a:hover{
+    color: var(--second1);
+}
+
+/*Mata Ciliar*/
+
+.conteudo-mata{
+    display: flex;
+    flex-direction: row;
+}
+
+.mata-1{
+    width: 25vw;
+    height: 120vh;
+    background-color: var(--second4);
+}
+
+.mata-2{
+    width: 75vw;
+    height: 74vh;  
+}
+
+.mata-info h1{
+    font-family: 'Poppins';
+    text-align: center;
+    margin: 10px;
+}
+
+.mata-info p{
+    margin: 25px;
+    text-align: center;
+}
+
+.img-mataciliar{
+    display: grid;
+    grid-template: 1fr 1fr / 1fr 1fr;
+    height: 47vh;
+}
+
+.img-mataciliar p{
+    text-align: center;
+    font-size: 1rem;
+}
+
+
+/*Passeios e Hospedagem*/
+
+.conteudo-hospedagem{
+    display: flex;
+    flex-direction: row;
+}
+
+.hospedagem-1{
+    width: 25vw;
+    height: 420vh;
+    background-color: var(--second4);
+}
+
+.hospedagem-2{
+    width: 75vw;
+    height: 74vh;
+}
+
+.hospedagem-2 h1{
+    font-size: 2.5em;
+    font-family: 'Poppins';
+    text-align: center;
+    margin: 10px;
+}
+
+.passeios-hosp h2{
+    margin: 15px;
+}
+
+.passeios-hosp img{
+    margin: 15px;
+}
+
+.passeios-hosp p{
+    margin: 15px;
+}
